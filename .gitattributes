@@ -1,7 +1,7 @@
 # See https://git-scm.com/docs/gitattributes for more about git attribute files.
 
-# Mark the database schema as having been generated.
-db/schema.rb linguist-generated
+# Mark the database structure as having been generated.
+db/strucutre.sql linguist-generated
 
 # Mark the Yarn lockfile as having been generated.
 yarn.lock linguist-generated

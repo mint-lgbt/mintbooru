@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="<%= I18n.locale %>">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <meta name="description" content="<%= meta_description %>">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="mintbooru">
+    <meta property="og:title" content="<%= page_title %>">
+    <meta property="og:description" content="<%= meta_description %>">
+    <meta property="og:url" content="<%= request.original_url %>">
+
+    <meta name="twitter:site" content="@mintlgbt">
+    <meta name="twitter:title" content="<%= page_title %>">
+    <meta name="twitter:description" content="<%= meta_description %>">
+
+    <meta name="generator" content="mint-lgbt/mintbooru @ <%# git_hash %>">
+
+    <meta name="theme-color" content="#0073ff">
+
+    <title>mintbooru</title>
+
+    <%= stylesheet_link_tag 'application', 'data-turbo-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbo-track': 'reload', defer: true %>
+  </head>
+
+  <body>
+    <%= render partial: 'layouts/navbar' %>
+
+    <%= render AlertComponent.new(content: alert) if alert %>
+    <%= render NoticeComponent.new(content: notice) if notice %>
+
+    <div id="output">
+      <%= yield %>
+    </div>
+  </body>
+</html>

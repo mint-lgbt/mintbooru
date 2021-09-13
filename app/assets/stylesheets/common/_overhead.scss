@@ -1,0 +1,30 @@
+// Overhead
+
+#overhead {
+  background: rgb(96,117,102);
+  background: linear-gradient(0deg, rgba(96,117,102,1) 0%, rgba(63,80,70,1) 100%);
+  border-bottom: 1px solid #313f3a;
+  color: #9eb1a3;
+  height: 2.5rem;
+  position: relative;
+}
+
+#overhead a {
+  color: #eaf2ee;
+  text-decoration: none;
+}
+
+.overhead-logo {
+  height: 40px;
+  left: 2px;
+  overflow: hidden;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: absolute;
+  vertical-align: top;
+  width: 125px;
+}
+
+.overhead-logo:hover {
+  background-color: #46524a;
+}

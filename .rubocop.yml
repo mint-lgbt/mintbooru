@@ -1,0 +1,36 @@
+require: rubocop-rails
+
+AllCops:
+  Exclude:
+    - lib/yui/compressor.rb
+  NewCops: disable
+
+Layout/LineLength:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Rails/HelperInstanceVariable:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Rails/CreateTableWithTimestamps:
+  Enabled: false
+
+Rails/OutputSafety:
+  Enabled: false

@@ -10,4 +10,6 @@ Shrine.storages = {
 
 Shrine.plugin :activerecord
 Shrine.plugin :cached_attachment_data
+Shrine.plugin :determine_mime_type, analyzer: :marcel
+Shrine.plugin :pretty_location
 Shrine.plugin :restore_cached_data

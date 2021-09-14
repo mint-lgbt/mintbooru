@@ -9,12 +9,16 @@ ruby '2.7.3'
 gem 'bcrypt', '~> 3.1', '>= 3.1.16'
 # Boot large ruby/rails apps faster
 gem 'bootsnap', '~> 1.8', '>= 1.8.1', require: false
+# Chewy provides functionality for Elasticsearch index handling
+gem 'chewy', '~> 7.2', '>= 7.2.2'
 # Flexible authentication solution for Rails with Warden
 gem 'devise', github: 'lunaisnotaboy/devise'
 # High-level wrapper for processing images for the web with ImageMagick or libvips
 gem 'image_processing', '~> 1.12', '>= 1.12.1'
 # Bundle and transpile JavaScript in Rails with esbuild, rollup.js, or Webpack
 gem 'jsbundling-rails', '~> 0.1.4'
+# Simple mime type detection using magic numbers, filenames, and extensions
+gem 'marcel', '~> 1.0', '>= 1.0.1'
 # PG is the Ruby interface to the PostgreSQL RDBMS
 gem 'pg', '~> 1.2', '>= 1.2.3'
 # Puma is a simple, fast, threaded, and highly concurrent HTTP 1.1 server for Ruby
@@ -27,6 +31,8 @@ gem 'redis', '~> 4.4'
 gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
 # Shrine is a toolkit for file attachments in Ruby applications
 gem 'shrine', '~> 3.4'
+# Simple, efficient background processing for Ruby
+gem 'sidekiq', '~> 6.2', '>= 6.2.2'
 # A modest JavaScript framework for the HTML you already have
 gem 'stimulus-rails', '~> 0.5.1'
 # Terser minifies JavaScript files by wrapping TerserJS to be accessible in Ruby

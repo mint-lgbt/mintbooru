@@ -20,7 +20,7 @@
     <meta name="twitter:title" content="<%= page_title %>">
     <meta name="twitter:description" content="<%= meta_description %>">
 
-    <meta name="generator" content="mint-lgbt/mintbooru @ <%# git_hash %>">
+    <meta name="generator" content="mint-lgbt/mintbooru @ <%= git_hash %>">
 
     <meta name="theme-color" content="#0073ff">
 
@@ -33,8 +33,9 @@
   <body>
     <%= render partial: 'layouts/navbar' %>
 
-    <%= render AlertComponent.new(content: alert) if alert %>
-    <%= render NoticeComponent.new(content: notice) if notice %>
+    <%# idk what's wrong, but these spit out errors %>
+    <%# render AlertComponent.new(content: alert) if alert %>
+    <%# render NoticeComponent.new(content: notice) if notice %>
 
     <div id="output">
       <%= yield %>

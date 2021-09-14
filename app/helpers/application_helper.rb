@@ -2,7 +2,7 @@
 
 module ApplicationHelper
   def git_hash
-    exec 'git rev-parse --short HEAD'
+    `git rev-parse HEAD`.chomp
   end
 
   def meta_description
